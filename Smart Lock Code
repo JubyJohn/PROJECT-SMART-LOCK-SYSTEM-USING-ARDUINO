@@ -1,0 +1,116 @@
+#include <Keypad.h>
+#include <LiquidCrystal.h>
+
+const int rs = A0, en = A1, d4 = A2, d5 = A3, d6 = A4, d7 = A5;
+const byte ROWS = 4; 
+const byte COLS = 4; 
+char hexaKeys[ROWS][COLS] = {
+  {'1','4','7','*'},
+  {'2','5','8','0'},
+  {'3','6','9','#'},
+  {'A','B','C','D'}
+};
+byte rowPins[ROWS] = {10, 11, 12, 13}; 
+byte colPins[COLS] = {6, 7, 8, 9}; 
+
+Keypad customKeypad = Keypad( makeKeymap(hexaKeys), rowPins, colPins, ROWS, COLS); 
+LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
+
+/*******************************************************************/
+
+void login();
+
+/*******************************************************************/
+ int pass = 1234;
+/*******************************************************************/
+void setup() 
+{
+  lcd.begin(16, 2);
+  lcd.setCursor(0,0);
+  lcd.print("SMART HOME ");
+  lcd.setCursor(0,1);
+  lcd.print("PRESS MENU [*]");
+}
+/*******************************************************************/
+void loop() 
+{
+  char key = customKeypad.getKey();
+  if (key == '*')
+  {
+    login();
+  }
+  delay(10);
+}
+
+/*******************************************************************/
+void login()
+{
+  int num=0,test=1,r,c=2,l=2;
+  lcd.clear();
+  lcd.setCursor(0,0);
+  lcd.print("Enter Password");
+  lcd.setCursor(0,1);
+  lcd.print("=> ");
+  delay(1000);
+  
+  while(1)
+  {
+    char key = customKeypad.getKey();
+    if (key >='0' && key <= '9')
+    {
+      r=key-48;
+      num=num*10+r;
+      lcd.setCursor(c,1);
+      lcd.print(key);
+      delay(500);
+      lcd.setCursor(c,1);
+      lcd.print("*");
+      c++;
+      l=c;
+      Serial.println(test);
+      if(l==6)
+           {
+              if(num == pass)
+              {
+                lcd.clear();
+                lcd.print("Access Granted");
+                delay(1000);
+                lcd.clear();
+                lcd.print("SMART HOME ");
+                lcd.setCursor(0,1);
+                lcd.print("PRESS MENU [*]");
+                return;
+              }
+              else
+              {
+                test++;
+                Serial.println(test);
+                  if(test > 3)
+                    {
+                      lcd.clear();
+                      lcd.print("Limit exceeds");
+                      delay(1000);
+                      lcd.clear();
+                      lcd.print("SMART HOME ");
+                      lcd.setCursor(0,1);
+                      lcd.print("PRESS MENU [*]");
+                      return;
+                    }
+                num = 0;
+                c=2;
+                lcd.clear();
+                lcd.print("Access denied   ");        
+                delay(1000);
+                lcd.clear();
+                lcd.print("Enter Password");
+                lcd.setCursor(14,1);
+                lcd.print(test);
+                lcd.setCursor(0,1);
+                lcd.print("=> ");        
+            }
+         }
+     }
+  }
+}
+
+/*******************************************************************/
