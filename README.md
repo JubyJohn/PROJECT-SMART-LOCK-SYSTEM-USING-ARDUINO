@@ -36,9 +36,6 @@ To create a smart lock  system using LCD and keypad interfaced with arduino.
 <br> D5 ---->  A3&ensp;&ensp;D7 ---->  A5
 
 
-## PROBLEMS
-
-
 ## OUTPUT
 
 ![IMG_1](https://github.com/user-attachments/assets/d91ea7ef-ddce-4b4a-b91b-2932dd2e5b11)
