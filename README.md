@@ -18,7 +18,9 @@ To create a smart lock  system using LCD and keypad interfaced with arduino.
 ## CONNECTION
 
 ### Matrix 4*4 keypad Module
- 
+
+ ![4x4-keypad-pinout](https://github.com/user-attachments/assets/dc83c5ce-cfc7-42b1-bf37-a125abce1cc1)
+
 <br> R1 ---->  10&ensp;&ensp;C1 ---->  6
 <br> R2 ---->  11&ensp;&ensp;C2 ---->  7
 <br> R3 ---->  12&ensp;&ensp;C3 ---->  8
@@ -26,6 +28,7 @@ To create a smart lock  system using LCD and keypad interfaced with arduino.
 
 ### LCD 16*2  Module
  
+![LCD 16,2](https://github.com/user-attachments/assets/ea945f49-f252-4be1-a027-1b8c65f92841)
 
 <br> RS ---->  A0&ensp;&ensp;Power supply  ---->  5V
 <br> EN ---->  A1&ensp;&ensp;GND   ---->  GND
@@ -33,14 +36,12 @@ To create a smart lock  system using LCD and keypad interfaced with arduino.
 <br> D5 ---->  A3&ensp;&ensp;D7 ---->  A5
 
 
-## CODE
-C:\Users\JUBY JOHN\Desktop\Projects\Arduino\Prjt 13 Smart Lock System\Prgm\lovk
-
-
 ## PROBLEMS
 
 
 ## OUTPUT
+
+![IMG_1](https://github.com/user-attachments/assets/d91ea7ef-ddce-4b4a-b91b-2932dd2e5b11)
 
 
 ## REFERENCE
