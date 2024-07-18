@@ -19,18 +19,18 @@ To create a smart lock  system using LCD and keypad interfaced with arduino.
 
 ### Matrix 4*4 keypad Module
  
-<br> R1 ---->  10&ensp;C1 ---->  6
-<br> R2 ---->  11	<space>		C2 ---->  7
-<br> R3 ---->  12	<space>		C3 ---->  8
-<br> R3 ---->  13	<space>		C4 ---->  9	
+<br> R1 ---->  10&ensp;&ensp;C1 ---->  6
+<br> R2 ---->  11&ensp;&ensp;C2 ---->  7
+<br> R3 ---->  12&ensp;&ensp;C3 ---->  8
+<br> R3 ---->  13&ensp;&ensp;C4 ---->  9	
 
 ### LCD 16*2  Module
  
 
-<br> RS ---->  A0	<space>		Power supply  ---->  5V
-<br> EN ---->  A1	<space>		GND   ---->  GND
-<br> D4 ---->  A2	<space>		D6 ---->  A4
-<br> D5 ---->  A3	<space>		D7 ---->  A5
+<br> RS ---->  A0&ensp;&ensp;Power supply  ---->  5V
+<br> EN ---->  A1&ensp;&ensp;GND   ---->  GND
+<br> D4 ---->  A2&ensp;&ensp;D6 ---->  A4
+<br> D5 ---->  A3&ensp;&ensp;D7 ---->  A5
 
 
 ## CODE
