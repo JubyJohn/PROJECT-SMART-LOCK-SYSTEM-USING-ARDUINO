@@ -36,6 +36,15 @@ To create a smart lock  system using LCD and keypad interfaced with arduino.
 <br> D5 ---->  A3&ensp;&ensp;D7 ---->  A5
 
 
+## PROCEDURE
+
+Step 1 : Interface ESP8266 microcontroller to Arduino IDE using port.
+Step 2 : Interface ESP8266 microcontroller with keypad and print key values on serial monitor.
+Step 2 : Interface ESP8266 microcontroller with LCD I2C and to print on display.
+Step 3 : Modify the program to get desired outputs on display of LCD I2C
+
+
+
 ## OUTPUT
 
 ![IMG_1](https://github.com/user-attachments/assets/d91ea7ef-ddce-4b4a-b91b-2932dd2e5b11)
