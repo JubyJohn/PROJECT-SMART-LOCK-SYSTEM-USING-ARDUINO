@@ -3,21 +3,21 @@
 
 ## AIM
 
-To create a smart lock  system using LCD and keypad interfaced with arduino.
+To create a smart lock  system using LCD and keypad interfaced with Arduino.
 
 
 ## COMPONENTS
 
 1) Arduino UNO R3
-2) LCD 16*2 Module
-3) Keypad 4*4
+2) LCD 16X2 Module
+3) Keypad 4X4 Module
 4) Jumper Wire
 5) USB Cable
 
 
 ## CONNECTION
 
-### Matrix 4*4 keypad Module
+### Matrix 4X4 keypad Module
 
  ![4x4-keypad-pinout](https://github.com/user-attachments/assets/dc83c5ce-cfc7-42b1-bf37-a125abce1cc1)
 
@@ -26,7 +26,7 @@ To create a smart lock  system using LCD and keypad interfaced with arduino.
 <br> R3 ---->  12&ensp;&ensp;C3 ---->  8
 <br> R3 ---->  13&ensp;&ensp;C4 ---->  9	
 
-### LCD 16*2  Module
+### LCD 16X2  Module
  
 ![LCD 16,2](https://github.com/user-attachments/assets/ea945f49-f252-4be1-a027-1b8c65f92841)
 
@@ -40,8 +40,8 @@ To create a smart lock  system using LCD and keypad interfaced with arduino.
 
 <br> Step 1 : Interface Arduino board to Arduino IDE using port.
 <br> Step 2 : Interface Arduino board with keypad and print key values on serial monitor.
-<br> Step 2 : Interface Arduino board with LCD I2C and to print on display.
-<br> Step 3 : Modify the program to get desired outputs on display of LCD I2C
+<br> Step 3 : Interface Arduino board with LCD and to print HI on display.
+<br> Step 4 : Modify the program to get desired outputs on display of LCD.
 
 
 ## OUTPUT
